@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semanaDos1.Regristro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="lblUsuarario" Text="" HorizontalTextAlignment="End" FontSize="18"/>
+            <Label Text="venta de regrsitro"
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="txtNombre"  Placeholder="Ingrese su nombrte"/>
+            <Entry x:Name="txtApellido"  Placeholder="Ingrese su Apellido"/>
+            <Entry x:Name="txtNotaParcialUno" Placeholder="Ingrese Nota Uno" Keyboard="Numeric"/>
+            <Entry x:Name="txtNotaParcialdos" Placeholder="Ingrese Nota Dos " Keyboard="Numeric"/>
+            <Label Text="Resultado"/>
+            <Entry x:Name="Resultado"/>
+            <Button x:Name="btnInformacion" Text="Mostrar Informacion" Clicked="btnInformacion_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

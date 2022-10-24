@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="semanaDos1.loguin">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout VerticalOptions="Center">
+            <Label Text="Sistema de Regristro de notas !"
+                HorizontalOptions="CenterAndExpand" />
+           
+            <Image Source="https://uisrael.edu.ec/wp-content/uploads/2020/05/logo-UISRAEL.png"/>
+            <Image Source="download"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="ingrese el usuario" Grid.Row="0" Grid.Column="0" FontSize="16" HorizontalOptions="Center"/>
+
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese  su Usuario" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="Ingrese la contraseña" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtContraseña" Placeholder="Ingrese su contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1">
+                </Entry>
+                </Grid>
+            
+            <Button x:Name="btnInicio" Text="Iniciar Secion" Clicked="btnInicio_Clicked"/>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
